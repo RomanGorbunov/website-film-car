@@ -1,0 +1,2489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <style>
+      /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+      /* Slider */
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+      /*
+ * FancyBox - jQuery Plugin
+ * Simple and fancy lightbox alternative
+ *
+ * Examples and documentation at: http://fancybox.net
+ * 
+ * Copyright (c) 2008 - 2010 Janis Skarnelis
+ * That said, it is hardly a one-person project. Many people have submitted bugs, code, and offered their advice freely. Their support is greatly appreciated.
+ * 
+ * Version: 1.3.4 (11/11/2010)
+ * Requires: jQuery v1.3+
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1104;
+	display: none;
+}
+
+#fancybox-loading div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 480px;
+	background-image: url('fancybox.png');
+}
+
+#fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1100;
+	display: none;
+}
+
+#fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: auto;
+	display: none;
+}
+
+#fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	z-index: 1101;
+	outline: none;
+	display: none;
+}
+
+#fancybox-outer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+#fancybox-content {
+	width: 0;
+	height: 0;
+	padding: 0;
+	outline: none;
+	position: relative;
+	overflow: hidden;
+	z-index: 1102;
+	border: 0px solid #fff;
+}
+
+#fancybox-hide-sel-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 1101;
+}
+
+#fancybox-close {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	width: 30px;
+	height: 30px;
+	background: transparent url('fancybox.png') -40px 0px;
+	cursor: pointer;
+	z-index: 1103;
+	display: none;
+}
+
+#fancybox-error {
+	color: #444;
+	font: normal 12px/20px Arial;
+	padding: 14px;
+	margin: 0;
+}
+
+#fancybox-img {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	line-height: 0;
+	vertical-align: top;
+}
+
+#fancybox-frame {
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+
+#fancybox-left, #fancybox-right {
+	position: absolute;
+	bottom: 0px;
+	height: 100%;
+	width: 35%;
+	cursor: pointer;
+	outline: none;
+	background: transparent url('blank.gif');
+	z-index: 1102;
+	display: none;
+}
+
+#fancybox-left {
+	left: 0px;
+}
+
+#fancybox-right {
+	right: 0px;
+}
+
+#fancybox-left-ico, #fancybox-right-ico {
+	position: absolute;
+	top: 50%;
+	left: -9999px;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	cursor: pointer;
+	z-index: 1102;
+	display: block;
+}
+
+#fancybox-left-ico {
+	background-image: url('fancybox.png');
+	background-position: -40px -30px;
+}
+
+#fancybox-right-ico {
+	background-image: url('fancybox.png');
+	background-position: -40px -60px;
+}
+
+#fancybox-left:hover, #fancybox-right:hover {
+	visibility: visible; /* IE6 */
+}
+
+#fancybox-left:hover span {
+	left: 20px;
+}
+
+#fancybox-right:hover span {
+	left: auto;
+	right: 20px;
+}
+
+.fancybox-bg {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 1001;
+}
+
+#fancybox-bg-n {
+	top: -20px;
+	left: 0;
+	width: 100%;
+	background-image: url('fancybox-x.png');
+}
+
+#fancybox-bg-ne {
+	top: -20px;
+	right: -20px;
+	background-image: url('fancybox.png');
+	background-position: -40px -162px;
+}
+
+#fancybox-bg-e {
+	top: 0;
+	right: -20px;
+	height: 100%;
+	background-image: url('fancybox-y.png');
+	background-position: -20px 0px;
+}
+
+#fancybox-bg-se {
+	bottom: -20px;
+	right: -20px;
+	background-image: url('fancybox.png');
+	background-position: -40px -182px; 
+}
+
+#fancybox-bg-s {
+	bottom: -20px;
+	left: 0;
+	width: 100%;
+	background-image: url('fancybox-x.png');
+	background-position: 0px -20px;
+}
+
+#fancybox-bg-sw {
+	bottom: -20px;
+	left: -20px;
+	background-image: url('fancybox.png');
+	background-position: -40px -142px;
+}
+
+#fancybox-bg-w {
+	top: 0;
+	left: -20px;
+	height: 100%;
+	background-image: url('fancybox-y.png');
+}
+
+#fancybox-bg-nw {
+	top: -20px;
+	left: -20px;
+	background-image: url('fancybox.png');
+	background-position: -40px -122px;
+}
+
+#fancybox-title {
+	font-family: Helvetica;
+	font-size: 12px;
+	z-index: 1102;
+}
+
+.fancybox-title-inside {
+	padding-bottom: 10px;
+	text-align: center;
+	color: #333;
+	background: #fff;
+	position: relative;
+}
+
+.fancybox-title-outside {
+	padding-top: 10px;
+	color: #fff;
+}
+
+.fancybox-title-over {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+	text-align: left;
+}
+
+#fancybox-title-over {
+	padding: 10px;
+	background-image: url('fancy_title_over.png');
+	display: block;
+}
+
+.fancybox-title-float {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	height: 32px;
+}
+
+#fancybox-title-float-wrap {
+	border: none;
+	border-collapse: collapse;
+	width: auto;
+}
+
+#fancybox-title-float-wrap td {
+	border: none;
+	white-space: nowrap;
+}
+
+#fancybox-title-float-left {
+	padding: 0 0 0 15px;
+	background: url('fancybox.png') -40px -90px no-repeat;
+}
+
+#fancybox-title-float-main {
+	color: #FFF;
+	line-height: 29px;
+	font-weight: bold;
+	padding: 0 0 3px 0;
+	background: url('fancybox-x.png') 0px -40px;
+}
+
+#fancybox-title-float-right {
+	padding: 0 0 0 15px;
+	background: url('fancybox.png') -55px -90px no-repeat;
+}
+
+/* IE6 */
+
+.fancybox-ie6 #fancybox-close { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_close.png', sizingMethod='scale'); }
+
+.fancybox-ie6 #fancybox-left-ico { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-right-ico { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale'); }
+
+.fancybox-ie6 #fancybox-title-over { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_over.png', sizingMethod='scale'); zoom: 1; }
+.fancybox-ie6 #fancybox-title-float-left { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_left.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-title-float-main { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_main.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-title-float-right { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_right.png', sizingMethod='scale'); }
+
+.fancybox-ie6 #fancybox-bg-w, .fancybox-ie6 #fancybox-bg-e, .fancybox-ie6 #fancybox-left, .fancybox-ie6 #fancybox-right, #fancybox-hide-sel-frame {
+	height: expression(this.parentNode.clientHeight + "px");
+}
+
+#fancybox-loading.fancybox-ie6 {
+	position: absolute; margin-top: 0;
+	top: expression( (-20 + (document.documentElement.clientHeight ? document.documentElement.clientHeight/2 : document.body.clientHeight/2 ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop )) + 'px');
+}
+
+#fancybox-loading.fancybox-ie6 div	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_loading.png', sizingMethod='scale'); }
+
+/* IE6, IE7, IE8 */
+
+.fancybox-ie .fancybox-bg { background: transparent !important; }
+
+.fancybox-ie #fancybox-bg-n { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_n.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-ne { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_ne.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-e { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_e.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-se { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_se.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-s { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_s.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-sw { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_sw.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-w { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_w.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-nw { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_nw.png', sizingMethod='scale'); }@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+@-webkit-keyframes header-navigation {
+  0% {
+    color: #3fdd71;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: red;
+  }
+}
+@keyframes header-navigation {
+  0% {
+    color: #3fdd71;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: red;
+  }
+}
+html {
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+section {
+  opacity: 0;
+  transform: translate(-120%, 50%);
+  transition: all 0.8s ease 0s;
+}
+section._anim {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  z-index: -99;
+  background: url("/src/images/main_car.png");
+  background-size: cover;
+  background-position: center center;
+  background-color: #464646;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.wrapper__next {
+  background-color: #1e1e1e;
+}
+
+._container {
+  max-width: 81rem;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0 0 10.5rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+}
+.nav__menu {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+.nav__menu-item {
+  margin-right: 2.5rem;
+}
+.nav__menu-item:last-child {
+  margin-right: 0;
+}
+.nav__menu-text {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.nav__menu-text:hover {
+  transition: all 0.7s;
+  color: red;
+  -webkit-animation: header-navigation;
+          animation: header-navigation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.main {
+  margin: 0 auto;
+}
+.main__title {
+  font-weight: 700;
+  font-size: 9.375rem;
+  text-align: center;
+  color: #db3138;
+  margin-bottom: 0.375rem;
+}
+.main__text {
+  position: relative;
+  margin: 2.56rem 0 2.5rem 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+  max-width: 437px;
+  left: 38.61%;
+  text-align: center;
+}
+
+.decore {
+  display: flex;
+  justify-content: center;
+}
+
+.decore span {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: #db3138;
+  transform: rotate(-45deg);
+  margin-right: 1.875rem;
+}
+.decore span:last-child {
+  margin-right: 0;
+}
+
+.button {
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(to right, #db3138 65%, rgba(20, 20, 20, 0.7) 35%);
+  padding: 1.06rem 2.125rem 0.75rem 1.5625rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: inherit;
+  left: calc(50% - 4.398rem);
+}
+
+.contacts {
+  margin: 11.9rem 0 0 0;
+  display: flex;
+}
+.contacts__colum {
+  border: 0.0625rem solid #898989;
+  flex: 0 0 33.33%;
+  height: 13.31rem;
+  border-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts__colum:last-child {
+  border-right: 0;
+}
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacts__subtitle {
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.contacts__text {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #db3138;
+}
+.contacts__tel-num {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #db3138;
+}
+
+.adress-contacts {
+  padding-bottom: 1.25rem;
+}
+
+.text-contacts {
+  max-width: 16.56rem;
+}
+
+.mode-contacts {
+  padding-bottom: 1.25rem;
+}
+
+.mode-text {
+  padding-bottom: 0.9375rem;
+}
+
+.phone-contacts {
+  padding-bottom: 1.25rem;
+}
+
+.achievements {
+  padding: 11.25rem 0;
+}
+.achievements__column {
+  padding-right: 1.5rem;
+  flex: 0 0 40.5rem;
+}
+.achievements__column:last-child {
+  margin-right: 0;
+}
+.achievements__title {
+  font-weight: 600;
+  font-size: 2.05rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.achievements__inner {
+  display: flex;
+}
+.achievements__text {
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 200%;
+  letter-spacing: 0.05em;
+  max-width: 32.875rem;
+}
+.achievements__grid {
+  display: grid;
+  grid-template-columns: 19.875rem 19.9375rem;
+  grid-template-rows: repeat(4, 11.0625rem);
+  grid-auto-rows: 11.0625rem;
+  grid-auto-columns: 19.875rem 19.9375rem;
+}
+.achievements__items {
+  border: 1px solid #898989;
+  padding: 25px 21px 35px 20px;
+  text-align: center;
+}
+.achievements__img {
+  max-width: 100%;
+}
+.achievements__descr {
+  font-size: 0.95rem;
+  margin-top: 1.375rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.decore__achievements {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+._block2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+._block3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+._block5 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+._block6 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+._block1,
+._block2,
+._block3,
+._block7 {
+  border-top: 0;
+  border-right: 0;
+}
+._block1:first-child,
+._block2:first-child,
+._block3:first-child,
+._block7:first-child {
+  border-top: 1px solid #898989;
+  border-right: 1px solid #898989;
+}
+
+._block2::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 1px;
+  background-color: #898989;
+  transform: translateX(10.99rem) translateY(-1.6rem);
+}
+
+._block5,
+._block6,
+._block4,
+._block8 {
+  transform: translateY(2.5rem);
+  border-top: 0;
+}
+
+._block5 {
+  border-top: 1px solid #898989;
+  border-left: 0;
+}
+
+.slick {
+  padding-bottom: 11.25rem;
+}
+.slick__container {
+  max-width: 82.5rem;
+  margin: 0 auto;
+}
+.slick__items {
+  max-width: 26.25rem;
+}
+.slick__items::before {
+  content: "";
+  background: #db3138;
+  width: 22.875rem;
+  min-height: 4.375rem;
+  position: absolute;
+  z-index: 2;
+  transform: translateX(1.5rem) translateY(19.375rem);
+}
+.slick__text {
+  position: relative;
+  font-weight: 600;
+  font-size: 0.77rem;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 17.875rem;
+  left: 4.0625rem;
+  z-index: 2;
+  top: 0.3rem;
+}
+.slick-prev {
+  position: absolute;
+  bottom: 40%;
+  right: 104%;
+}
+.slick-prev::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url("/src/images/slick1/arrow-white-slick1.svg") no-repeat;
+  position: absolute;
+  left: 1%;
+  top: 39%;
+  transform: rotate(45deg);
+}
+.slick-next {
+  position: absolute;
+  right: -6%;
+  top: 45%;
+}
+.slick-next::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url("/src/images/slick1/arrow-white2-slick1.svg") no-repeat;
+  position: absolute;
+  left: 1%;
+  top: 25%;
+  transform: rotate(45deg);
+}
+
+.slick-slider button {
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.1875rem solid #db3138;
+  transform: rotate(-45deg);
+  font-size: 0;
+  background-color: transparent;
+}
+
+.benefits {
+  padding-bottom: 11.25rem;
+}
+.benefits__inner {
+  display: flex;
+}
+.benefits__column {
+  margin-right: 8.375rem;
+  flex: 0 0 32.875rem;
+}
+.benefits__items {
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+.benefits__img {
+  padding-right: 2.3125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+.benefits__title {
+  font-weight: 600;
+  font-size: 1.32rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 1.4rem;
+}
+.benefits__title--center {
+  font-weight: 600;
+  font-size: 1.32rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 0.55rem;
+}
+.benefits__text {
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+}
+.benefits__text:last-child {
+  margin-bottom: 0;
+}
+.benefits__slick {
+  display: flex;
+  max-width: 39.75rem;
+}
+.benefits__slick-text {
+  min-width: 25.375rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.67rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 3.125rem 6.6875rem 0 6.6875rem;
+}
+
+.benefits__column .decore {
+  margin-bottom: 40px;
+}
+
+.benefits__slick .slick-track {
+  min-width: 39.75rem;
+}
+
+.benefits__slick .slick-prev {
+  bottom: -0.3125rem;
+  left: 0.625rem;
+  z-index: 3;
+}
+
+.benefits__slick .slick-next {
+  top: 93%;
+  right: 1.7%;
+}
+
+.service {
+  padding-bottom: 11.25rem;
+}
+.service__title {
+  font-weight: 600;
+  font-size: 2.05rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.service__buttions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.service__btn {
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+  padding: 1.25rem 2.5rem 0.625rem 2.5rem;
+  margin-right: 3.75rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.service__btn:last-child {
+  margin-right: 0;
+}
+.service__btn:focus {
+  background-color: #db3138;
+  transition: all 0.3s;
+}
+.service__column {
+  grid-template-columns: repeat(4, 19.125rem);
+  grid-auto-columns: 19.125rem 19.125rem;
+  grid-template-rows: repeat(1, 26.75rem);
+  grid-auto-rows: 26.75rem 26.75rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.service__items {
+  display: flex;
+  border: 1px solid #898989;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service__img {
+  height: 70.5px;
+  margin-bottom: 1.3125rem;
+}
+.service__subtitle {
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.service__text {
+  text-align: center;
+  line-height: 150%;
+  margin-bottom: 1.5625rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.service__decore .decore {
+  margin-bottom: 3.8125rem;
+}
+
+.tab {
+  display: none;
+}
+
+.active {
+  display: block;
+  display: grid;
+}
+
+.service__items button {
+  position: inherit;
+  padding: 0.625rem 2.1875rem 0.375rem 1.25rem;
+  background: linear-gradient(to right, #db3138 40%, rgba(20, 20, 20, 0.7) 60%);
+}
+
+.replay .benefits__text {
+  font-size: 0.81rem;
+}
+.replay .benefits__slick {
+  margin-right: 8.375rem;
+}
+.replay .benefits__title {
+  padding-top: 0.76375rem;
+}
+.replay .benefits__title--center {
+  padding-top: 1.13875rem;
+}
+.replay .benefits__title--top {
+  padding-top: 1.296875rem;
+  text-transform: uppercase;
+}
+
+.works {
+  padding-bottom: 7.5rem;
+}
+.works__title {
+  font-weight: 600;
+  font-size: 2.05rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.works .decore {
+  margin-bottom: 3.8125rem;
+}
+.works__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(3, 17.5rem);
+}
+.works__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: #1e1e1e;
+}
+
+.footer {
+  margin: 0 auto 6.25rem;
+}
+.footer__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.05rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+.footer .decore {
+  margin-bottom: 3.8125rem;
+}
+.footer__name {
+  margin-right: 1.5rem;
+  background: #141414;
+  border: 1px solid #898989;
+  color: #ffffff;
+  width: 19.125rem;
+  height: 2.125rem;
+}
+.footer__name::-moz-placeholder {
+  color: #898989;
+  padding: 0.625rem 16.6875rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__name:-ms-input-placeholder {
+  color: #898989;
+  padding: 0.625rem 16.6875rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__name::placeholder {
+  color: #898989;
+  padding: 0.625rem 16.6875rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__name:hover {
+  border: 1px solid #db3138;
+}
+.footer__telephone {
+  background: #141414;
+  border: 1px solid #898989;
+  color: #ffffff;
+  width: 19.125rem;
+  height: 2.125rem;
+}
+.footer__telephone::-moz-placeholder {
+  color: #898989;
+  padding: 0.625rem 16.6875rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__telephone:-ms-input-placeholder {
+  color: #898989;
+  padding: 0.625rem 16.6875rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__telephone::placeholder {
+  color: #898989;
+  padding: 0.625rem 16.6875rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__telephone:hover {
+  border: 1px solid #db3138;
+}
+.footer__textarea {
+  margin-right: 4.375rem;
+  resize: none;
+  width: 32.875rem;
+  height: 9rem;
+  background: #141414;
+  border: 1px solid #898989;
+  color: #ffffff;
+}
+.footer__textarea::-moz-placeholder {
+  color: #898989;
+  padding: 0.625rem 17.9375rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__textarea:-ms-input-placeholder {
+  color: #898989;
+  padding: 0.625rem 17.9375rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__textarea::placeholder {
+  color: #898989;
+  padding: 0.625rem 17.9375rem 0.9375rem 1.5625rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.footer__textarea:hover {
+  border: 1px solid #db3138;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+}
+.footer__img {
+  border: 1px solid #898989;
+  padding: 0.625rem;
+}
+.footer__img:last-child {
+  margin-bottom: 0;
+}
+.footer__link {
+  margin-bottom: 0.9375rem;
+}
+.footer__link:last-child {
+  margin-bottom: 0;
+}
+.footer__btn {
+  display: flex;
+  justify-content: center;
+}
+.footer__btn .button {
+  position: inherit;
+  left: 0;
+}
+.footer__contacts {
+  justify-content: space-between;
+  margin-left: 11.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 18.5625rem;
+  font-weight: 600;
+  font-size: 0.66rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.footer__mapping {
+  margin-bottom: 0.8125rem;
+}
+.footer__mapping img {
+  margin-right: 0.625rem;
+}
+.footer__tel {
+  margin-left: 1.625rem;
+}
+.footer__tel img {
+  margin-right: 0.625rem;
+}
+.footer__email img {
+  margin-right: 0.625rem;
+}
+.footer__bottom-line {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.0635rem;
+}
+.footer__bottom-line nav {
+  padding: 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer__name:focus::-moz-placeholder {
+  color: #ffffff;
+}
+
+.footer__name:focus:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__name:focus::placeholder {
+  color: #ffffff;
+}
+
+.footer__telephone:focus::-moz-placeholder {
+  color: #ffffff;
+}
+
+.footer__telephone:focus:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__telephone:focus::placeholder {
+  color: #ffffff;
+}
+
+.footer__textarea:focus::-moz-placeholder {
+  color: #ffffff;
+}
+
+.footer__textarea:focus:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.footer__textarea:focus::placeholder {
+  color: #ffffff;
+}
+
+.textarea {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+hr {
+  border: 1px solid #898989;
+  margin-bottom: 2.125rem;
+}
+
+.bottom__text {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-right: 11.6875rem;
+}
+
+.nav__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+}
+.nav__footer__menu__footer {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu-item__footer {
+  margin-bottom: 0.5rem;
+}
+.nav__menu-item__footer:last-child {
+  margin-right: 0;
+}
+
+.nav__menu-text__footer {
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.nav__menu-text__footer:hover {
+  transition: all 0.7s;
+  color: red;
+  -webkit-animation: header-navigation;
+          animation: header-navigation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.price {
+  height: 100vh;
+}
+.price__benefits {
+  padding-top: 11.25rem;
+}
+
+.main__price {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main__price-title {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #db3138;
+  margin-bottom: 2.125rem;
+  max-width: 39.75rem;
+}
+.main__price-text {
+  margin: 2.56rem 0 5.75rem 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+  max-width: 27.3125rem;
+  text-align: center;
+}
+
+.container {
+  margin-bottom: 16.375rem;
+}
+
+.button-price {
+  background: linear-gradient(to right, #db3138 40%, rgb(21, 21, 21) 60%);
+  padding: 1.06rem 2.125rem 0.75rem 1.5625rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.price__benefits-items {
+  display: grid;
+  grid-template-columns: repeat(2, 10rem);
+  grid-auto-columns: 10rem 10rem;
+  grid-template-rows: repeat(2, 3.5rem);
+  grid-auto-rows: 3.5rem 3.5rem;
+  -moz-column-gap: 6.1875rem;
+       column-gap: 6.1875rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__title--price {
+  font-weight: 600;
+  font-size: 1.32rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.benefits__items--price {
+  margin-bottom: 3.125rem;
+}
+
+.price__benefits-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.price_service {
+  display: grid;
+}
+
+.table {
+  border-top: 1px solid #898989;
+  border-bottom: 1px solid #898989;
+  display: flex;
+  flex-direction: column;
+}
+.table__inner {
+  border-top: 1px solid #898989;
+  display: flex;
+  align-items: center;
+}
+.table__inner-subtitle {
+  display: flex;
+}
+.table__subtitle {
+  margin-right: 1.5rem;
+  text-align: center;
+  flex-basis: 15rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1.875rem 0;
+}
+.table__subtitle:last-child {
+  margin-right: 0;
+}
+.table__text {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  padding: 2.625rem 0;
+  flex-basis: 4.4375rem;
+  margin-right: 12.0625rem;
+}
+.table__text:last-child {
+  margin-right: 0;
+}
+.table__text--name {
+  font-size: 0.96rem;
+  margin-right: 8rem;
+  flex-basis: 13.625rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #db3138;
+  padding: 1.5625rem 0 1.5625rem 0.6875rem;
+  text-align: center;
+}
+
+@media (max-width: 1570px) {
+  .main__text {
+    left: calc(50% - 13.65625rem);
+  }
+  .slick .slick-next {
+    right: 0;
+    top: -20%;
+  }
+  .slick .slick-prev {
+    right: 98%;
+    top: -20%;
+  }
+  .nav {
+    justify-content: space-around;
+  }
+  .achievements__text {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1407px) {
+  .slick .slick-next {
+    right: 5%;
+  }
+  .slick .slick-prev {
+    right: 93%;
+  }
+}
+@media (max-width: 1315px) {
+  .slick .slick-prev {
+    right: 88%;
+  }
+  .achievements__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .achievements__column {
+    margin-bottom: 2.5rem;
+  }
+  .decore__achievements {
+    justify-content: center;
+  }
+  .slick .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .slick__text {
+    top: 0;
+    margin: 0;
+  }
+  .slick__container {
+    width: 72%;
+  }
+  .slick .slick-arrow {
+    visibility: visible;
+  }
+  .slick-prev {
+    right: 101%;
+  }
+  .benefits__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits__column {
+    margin-right: 0;
+    max-width: 100%;
+    text-align: center;
+    margin: 2.5rem 0;
+  }
+  .benefits__items {
+    display: block;
+  }
+  .active {
+    justify-content: center;
+  }
+  .service__column {
+    grid-template-columns: repeat(2, 19.125rem);
+    row-gap: 1.5rem;
+  }
+  .replay .benefits__slick {
+    margin-right: 0;
+  }
+  .slick {
+    padding-bottom: 5.25rem;
+  }
+  .bottom__text {
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 860px) {
+  .main__title {
+    font-size: 6.375rem;
+  }
+  .contacts__text {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header {
+    position: fixed;
+    z-index: 99;
+  }
+  .main {
+    padding-top: 10rem;
+  }
+  .burger {
+    display: block;
+    position: relative;
+    width: 1.875rem;
+    height: 1.25rem;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .burger::before,
+.burger::after {
+    content: "";
+    background-color: #db3138;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .burger span {
+    background-color: #db3138;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    z-index: 5;
+  }
+  .burger::before {
+    top: 0;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .nav.power {
+    background-color: #898989;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+  }
+  .nav__menu {
+    visibility: hidden;
+  }
+  .nav__menu.power {
+    padding-top: 8rem;
+    flex-direction: column;
+    align-items: stretch;
+    top: -100%;
+    position: relative;
+    visibility: visible;
+    transition: all 0.3s ease 0s;
+  }
+  .nav__menu-item {
+    margin-bottom: 3rem;
+  }
+  .nav__menu-item:last-child {
+    margin-bottom: 0;
+  }
+  .nav__menu-text.power {
+    font-size: 2rem;
+  }
+  .nav__menu.power {
+    top: 0;
+  }
+  .burger.power span {
+    transform: scale(0);
+    transition: all 0.5s ease 0s;
+  }
+  .burger.power::before {
+    transform: rotate(45deg);
+    top: 9px;
+    transition: all 0.5s ease 0s;
+  }
+  .burger.power::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: all 0.5s ease 0s;
+  }
+}
+@media (max-width: 687px) {
+  .achievements__column {
+    flex-basis: 100%;
+  }
+  .nav {
+    flex-direction: row-reverse;
+  }
+  .achievements__grid {
+    display: block;
+  }
+  .achievements__items {
+    border: 1px solid #898989;
+    margin-bottom: 1rem;
+  }
+  ._block2::before {
+    display: none;
+  }
+  ._block5,
+._block6,
+._block4,
+._block8 {
+    transform: none;
+  }
+  .benefits__slick-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .benefits__slick {
+    max-width: 100%;
+  }
+  .benefits__slick .slick-next {
+    right: 80%;
+    visibility: hidden;
+  }
+  .benefits__slick .slick-prev {
+    left: 4.625rem;
+    visibility: hidden;
+  }
+  .service__column {
+    grid-template-columns: 19.125rem;
+  }
+  .footer__name,
+.footer__telephone {
+    width: 100%;
+  }
+  .footer__textarea {
+    margin-right: 1rem;
+  }
+  .footer__contacts {
+    margin-left: 1rem;
+  }
+  .footer__textarea {
+    width: 100%;
+  }
+  .nav__menu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .achievements__title {
+    text-align: center;
+  }
+  .benefits__slick-text {
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .slick-slide img {
+    width: 100%;
+    height: 100%;
+  }
+  .slick__text {
+    left: 14%;
+  }
+  .slick__items::before {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .slick__text {
+    left: 8%;
+  }
+  .footer__btn {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  .achievements__title {
+    padding-top: 4rem;
+  }
+  .service {
+    padding-bottom: 5.25rem;
+  }
+  .contacts__subtitle {
+    font-size: 0.65rem;
+  }
+  .slick__text {
+    left: 4%;
+    position: inherit;
+  }
+  .slick__text {
+    font-size: 0.55rem;
+  }
+  .main__text {
+    font-size: 0.8rem;
+    left: 0;
+  }
+  .footer__textarea::-moz-placeholder {
+    visibility: hidden;
+  }
+  .footer__textarea:-ms-input-placeholder {
+    visibility: hidden;
+  }
+  .footer__textarea::placeholder {
+    visibility: hidden;
+  }
+  .contacts__tel-num,
+.contacts__text {
+    font-size: 0.6rem;
+  }
+  .benefits__slick-text {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .service__btn {
+    padding: 0;
+  }
+  .slick .slick-arrow {
+    visibility: hidden;
+  }
+  .achievements {
+    padding: 0;
+  }
+}
+@media (max-width: 340px) {
+  .service__column {
+    grid-template-columns: 17.125rem;
+  }
+  .footer__contacts {
+    margin-left: -0.5rem;
+  }
+  .works__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}/*# sourceMappingURL=style.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header">
+          <div class="container _container"> 
+            <nav class="nav">
+              <ul class="nav__menu">
+                <li class="nav__menu-item"><a class="nav__menu-text" href="/src/index.html">Главная</a></li>
+                <li class="nav__menu-item"><a class="nav__menu-text" href="/src/index.html#Оклейка автомобилей">Оклейка автомобилей   </a></li>
+                <li class="nav__menu-item"><a class="nav__menu-text" href="/src/index.html#Детейлинг автомобилей">Детейлинг автомобилей</a></li>
+                <li class="nav__menu-item"><a class="nav__menu-text" href="#Галерея работ">Галерея работ</a></li>
+              </ul>
+              <div class="burger"><span>         </span></div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="_anim-items _anim-no-hide">
+        <div class="main">
+          <p class="main__title">CAR MUSC</p>
+          <div class="decore"><span> </span><span> </span><span> </span><span> </span></div>
+          <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.</p>
+          <button class="button" onclick="document.location='/src/price.html'">Наши услуги</button>
+        </div>
+      </section>
+      <section class="_anim-items _anim-no-hide">
+        <div class="contacts">
+          <ul class="contacts__colum">
+            <li class="contacts__item">
+              <p class="contacts__subtitle adress-contacts">адрес:</p>
+              <p class="contacts__text text-contacts">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+            </li>
+          </ul>
+          <ul class="contacts__colum">   
+            <li class="contacts__item">
+              <p class="contacts__subtitle phone-contacts">телефон:</p><a class="contacts__tel" href="tel:+88121234567"><span class="contacts__tel-num">8 (812) 123-45-67</span></a><a class="contacts__tel" href="tel:+89111234567"><span class="contacts__tel-num">8-911-123-45-67</span></a>
+            </li>
+          </ul>
+          <ul class="contacts__colum">      
+            <li class="contacts__item">
+              <p class="contacts__subtitle mode-contacts">Режим работы:  </p>
+              <p class="contacts__text mode-text">пн-пт : 10:00 - 20:00</p>
+              <p class="contacts__text">сб-вск : 12:00 - 20:00</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="wrapper__next">
+      <section class="_anim-items _anim-no-hide">
+        <div class="achievements">
+          <div class="_container achievements__inner">
+            <div class="achievements__column">
+              <h1 class="achievements__title">наши достижения от кубка россии до чемпионатов мира</h1>
+              <div class="decore decore__achievements"><span></span><span></span><span></span><span>  </span></div>
+              <p class="achievements__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales. Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at. Sed viverra nulla nam arcu, non iaculis pretium, volutpat. </p>
+            </div>
+            <div class="achievements__column">
+              <ul class="achievements__grid">
+                <li class="achievements__items _block1"><img class="achievements__img" src="/src/images/achievements/1.svg" alt="#1">
+                  <p class="achievements__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui </p>
+                </li>
+                <li class="achievements__items _block2"><img class="achievements__img" src="/src/images/achievements/6.svg" alt="#6">
+                  <p class="achievements__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                </li>
+                <li class="achievements__items _block3"><img class="achievements__img" src="/src/images/achievements/2.svg" alt="#2">
+                  <p class="achievements__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                </li>
+                <li class="achievements__items _block4"> <img class="achievements__img" src="/src/images/achievements/1.svg" alt="#1">
+                  <p class="achievements__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                </li>
+                <li class="achievements__items _block5"><img class="achievements__img" src="/src/images/achievements/4.svg" alt="#4">
+                  <p class="achievements__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                </li>
+                <li class="achievements__items _block6"><img class="achievements__img" src="/src/images/achievements/3.svg" alt="#3">
+                  <p class="achievements__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                </li>
+                <li class="achievements__items _block7"><img class="achievements__img" src="/src/images/achievements/1.svg" alt="#1">
+                  <p class="achievements__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                </li>
+                <li class="achievements__items _block8"><img class="achievements__img" src="/src/images/achievements/cup.svg" alt="cup">
+                  <p class="achievements__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="_anim-items _anim-no-hide">
+        <div class="slick">
+          <div class="slick__container">
+            <ul class="slick__list">
+              <li class="slick__items"><img class="slick__img" src="/src/images/slick1/car-slick1.jpg" alt="car">
+                <p class="slick__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante. </p>
+              </li>
+              <li class="slick__items"><img class="slick__img" src="/src/images/slick1/car2-slick1.jpg" alt="car">
+                <p class="slick__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+              </li>
+              <li class="slick__items"><img class="slick__img" src="/src/images/slick1/car3-slick1.jpg" alt="car">
+                <p class="slick__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.    </p>
+              </li>
+              <li class="slick__items"><img class="slick__img" src="/src/images/slick1/car-slick1.jpg" alt="car">
+                <p class="slick__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+              </li>
+              <li class="slick__items"><img class="slick__img" src="/src/images/slick1/car2-slick1.jpg" alt="car">
+                <p class="slick__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+              </li>
+              <li class="slick__items"><img class="slick__img" src="/src/images/slick1/car3-slick1.jpg" alt="car">
+                <p class="slick__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="_anim-items _anim-no-hide">
+        <div class="benefits">
+          <div class="_container">
+            <div class="benefits__inner">
+              <ul class="benefits__column">
+                <li class="benefits__items"><img class="benefits__img" src="/src/images/slick2/svg1-slick2.svg" alt="image">
+                  <h2 class="benefits__title">материалы от лучших компаний</h2>
+                </li>
+                <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie proin tristique duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium</p>
+                <div class="decore"><span></span><span></span><span></span><span> </span></div>
+                <li class="benefits__items"><img class="benefits__img" src="/src/images/slick2/svg2-slick2.svg" alt="image">
+                  <h2 class="benefits__title--center">Опытные мастера</h2>
+                </li>
+                <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec elementum egestas vitae ullamcorper. Amet volutpat ornare pharetra amet adipiscing orci, lectus aenean ultricies. Erat viverra eget blandit ornare. Molestie ipsum commodo faucibus rhoncus</p>
+                <div class="decore"><span></span><span></span><span></span><span>     </span></div>
+                <li class="benefits__items"><img class="benefits__img" src="/src/images/slick2/svg3-slick2.svg" alt="image">
+                  <h2 class="benefits__title">Гарантия на все виды работы</h2>
+                </li>
+                <p class="benefits__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat.</p>
+              </ul>
+              <ul class="benefits__slick">
+                <li class="benefits__item"><img class="benefits__slick-img" src="/src/images/slick2/slick2-title1.jpg" alt="car">
+                  <p class="benefits__slick-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus. </p>
+                </li>
+                <li class="benefits__item"><img class="benefits__slick-img" src="/src/images/slick2/slick2-title2.jpg" alt="car">
+                  <p class="benefits__slick-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="_anim-items _anim-no-hide" id="Оклейка автомобилей">
+        <div class="service" id="Детейлинг автомобилей">
+          <div class="_container">
+            <div class="service__decore">
+              <h1 class="service__title">Наши услуги</h1>
+              <div class="decore"><span></span><span></span><span></span><span></span></div>
+              <div class="service__inner" id="main">
+                <div class="service__buttions">
+                  <button class="service__btn" id="link1">Оклейка</button>
+                  <button class="service__btn" id="link2">Детейлинг</button>
+                </div>
+                <ul class="service__column tab" id="link1">
+                  <li class="service__items"><img class="service__img" src="/src/images/service/service_svg1.svg" alt="svg">
+                    <h3 class="service__subtitle">Защитные пленки</h3>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                    <button class="button" href="#">Подробнее</button>
+                  </li>
+                  <li class="service__items"><img class="service__img" src="/src/images/service/service_svg2.svg" alt="svg">
+                    <h3 class="service__subtitle">Цветные пленки</h3>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                    <button class="button" href="#">Подробнее</button>
+                  </li>
+                  <li class="service__items"><img class="service__img" src="/src/images/service/service_svg3.svg" alt="svg">
+                    <h3 class="service__subtitle">Дизайн</h3>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                    <button class="button" href="#">Подробнее</button>
+                  </li>
+                  <li class="service__items"><img class="service__img" src="/src/images/service/service_svg4.svg" alt="svg">
+                    <h3 class="service__subtitle">Оклейка салона</h3>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                    <button class="button" href="#">Подробнее</button>
+                  </li>
+                </ul>
+                <ul class="service__column tab" id="link2">
+                  <li class="service__items"><img class="service__img" src="/src/images/service/service_svg1.svg" alt="svg">
+                    <h3 class="service__subtitle">Защитные пленки</h3>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                    <button class="button" href="#">Подробнее</button>
+                  </li>
+                  <li class="service__items"><img class="service__img" src="/src/images/service/service_svg2.svg" alt="svg">
+                    <h3 class="service__subtitle">Цветные пленки</h3>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                    <button class="button" href="#">Подробнее</button>
+                  </li>
+                  <li class="service__items"><img class="service__img" src="/src/images/service/service_svg3.svg" alt="svg">
+                    <h3 class="service__subtitle">Дизайн</h3>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                    <button class="button" href="#">Подробнее</button>
+                  </li>
+                  <li class="service__items"><img class="service__img" src="/src/images/service/service_svg4.svg" alt="svg">
+                    <h3 class="service__subtitle">Оклейка салона</h3>
+                    <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.</p>
+                    <button class="button" href="#">Подробнее                </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="replay _anim-items _anim-no-hide">
+        <div class="benefits">
+          <div class="_container">
+            <div class="benefits__inner">
+              <ul class="benefits__slick">
+                <li class="benefits__item"><img class="benefits__slick-img" src="/src/images/slick2/slick2-title1.jpg" alt="car">
+                  <p class="benefits__slick-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus. </p>
+                </li>
+                <li class="benefits__item"><img class="benefits__slick-img" src="/src/images/slick2/slick2-title2.jpg" alt="car">
+                  <p class="benefits__slick-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.     </p>
+                </li>
+              </ul>
+              <ul class="benefits__column">
+                <li class="benefits__items"><img class="benefits__img" src="/src/images/service/service_svg1.svg" alt="image">
+                  <h2 class="benefits__title--top">100% полироль axem</h2>
+                </li>
+                <p class="benefits__text">Pharetra in bibendum id id. Sit maecenas sollicitudin est, hendrerit in malesuada. Eu, et lacus nisi mus sagittis, rhoncus est dictum. Gravida lectus urna, arcu, sodales. Ac.</p>
+                <div class="decore"><span></span><span></span><span></span><span> </span></div>
+                <li class="benefits__items"><img class="benefits__img" src="/src/images/service/service_svg2.svg" alt="image">
+                  <h2 class="benefits__title--center">выполняем работу четко по тз</h2>
+                </li>
+                <p class="benefits__text">Lorem nulla non nibh quis elit odio. Dui et ultricies duis mattis dictum et senectus nunc sodales. Tellus lorem risus etiam quam massa lobortis convallis laoreet. Nec.</p>
+                <div class="decore"><span></span><span></span><span></span><span>     </span></div>
+                <li class="benefits__items"><img class="benefits__img" src="/src/images/service/service_svg3.svg" alt="image">
+                  <h2 class="benefits__title">у нас лучшие мастера</h2>
+                </li>
+                <p class="benefits__text">Posuere nam sodales ullamcorper bibendum justo maecenas at. Ultricies bibendum morbi tempor vehicula. Ultrices erat maecenas in id maecenas sed ipsum scelerisque. </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="_anim-items _anim-no-hide" id="Галерея работ">
+        <div class="works">
+          <h1 class="works__title">Наши работы</h1>
+          <div class="decore"><span></span><span></span><span></span><span> </span></div>
+          <div class="works__gallery"><a class="works__link" rel="gallery" href="/src/images/gallery/car1.jpg"> <img class="works__img" src="/src/images/gallery/car1.jpg" alt="1"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car2.jpg"> <img class="works__img" src="/src/images/gallery/car2.jpg" alt="2"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car3.jpg"><img class="works__img" src="/src/images/gallery/car3.jpg" alt="3"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car4.jpg"> <img class="works__img" src="/src/images/gallery/car4.jpg" alt="4"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car5.jpg"> <img class="works__img" src="/src/images/gallery/car5.jpg" alt="5"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car6.jpg"><img class="works__img" src="/src/images/gallery/car6.jpg" alt="6"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car1.jpg"> <img class="works__img" src="/src/images/gallery/car1.jpg" alt="1"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car2.jpg"> <img class="works__img" src="/src/images/gallery/car2.jpg" alt="2"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car3.jpg"><img class="works__img" src="/src/images/gallery/car3.jpg" alt="3"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car4.jpg"> <img class="works__img" src="/src/images/gallery/car4.jpg" alt="4"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car5.jpg"> <img class="works__img" src="/src/images/gallery/car5.jpg" alt="5"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car6.jpg"><img class="works__img" src="/src/images/gallery/car6.jpg" alt="6"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car1.jpg"> <img class="works__img" src="/src/images/gallery/car1.jpg" alt="1"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car2.jpg"> <img class="works__img" src="/src/images/gallery/car2.jpg" alt="2"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car3.jpg"><img class="works__img" src="/src/images/gallery/car3.jpg" alt="3"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car4.jpg"> <img class="works__img" src="/src/images/gallery/car4.jpg" alt="4"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car5.jpg"> <img class="works__img" src="/src/images/gallery/car5.jpg" alt="5"></a><a class="works__link" rel="gallery" href="/src/images/gallery/car6.jpg"><img class="works__img" src="/src/images/gallery/car6.jpg" alt="6"></a></div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer">
+        <h1 class="footer__title">ответим на любой вопрос</h1>
+        <div class="decore"><span></span><span></span><span></span><span></span></div>
+        <form action=""> 
+          <input class="footer__name" type="text" name="name" placeholder="Имя">
+          <input class="footer__telephone contact-form__input contact-form__input_tel" name="tel" type="tel" placeholder=" Телефон">
+        </form>
+        <div class="textarea">
+          <textarea class="footer__textarea" name="text" placeholder="Вопрос по дизайну, тюнингу и др."></textarea>
+          <div class="footer__social"><a class="footer__link" href="https://telegram.org/"><img class="footer__img" src="/src/images/footer/telegramm.svg" alt="telegramm"></a><a class="footer__link" href="https://www.youtube.com/"> <img class="footer__img" src="/src/images/footer/youtube.svg" alt="youtube"></a><a class="footer__link" href="https://vk.com/"> <img class="footer__img" src="/src/images/footer/VK.svg" alt="VK"></a></div>
+        </div>
+        <div class="footer__btn">
+          <button class="button" href="#" type="submit">Отправить</button>
+          <div class="footer__contacts"> <a class="footer__mapping" href="#"><img src="/src/images/footer/mapping.svg" alt="map"><span>Eu faucibus et rutrum fringilla orci nunc  </span></a><a class="footer__tel" href="tel:+88121234567"><img src="/src/images/footer/phone.svg" alt="phone"><span>8 (812) 123-45-67</span></a><a class="footer__email" href="e-mail:TEST@TEST.RU"><img src="/src/images/footer/mailbox.svg" alt="mailbox"><span>TEST@TEST.RU</span></a></div>
+        </div>
+      </div>
+      <hr>
+      <div class="footer__bottom-line">
+        <p class="bottom__text">2022 © Est et viverra pellentesque pharetra lorem proin in. Vitae magna at tempus commodo.</p>
+        <nav class="nav__footer">
+          <ul class="nav__menu__footer">
+            <li class="nav__menu-item__footer"><a class="nav__menu-text__footer" href="/src/index.html">Главная</a></li>
+            <li class="nav__menu-item__footer"><a class="nav__menu-text__footer" href="/src/index.html#Оклейка автомобилей">Оклейка автомобилей   </a></li>
+            <li class="nav__menu-item__footer"><a class="nav__menu-text__footer" href="/src/index.html#Детейлинг автомобилей">Детейлинг автомобилей</a></li>
+            <li class="nav__menu-item__footer"><a class="nav__menu-text__footer" href="#Галерея работ">Галерея работ    </a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/src/js/slick.min.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="./scripts/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="/src/scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+    <script type="text/javascript" src="/src/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+  </body>
+</html>

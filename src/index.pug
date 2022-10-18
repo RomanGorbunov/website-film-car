@@ -1,0 +1,282 @@
+- var pageTitle= "Final"
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= pageTitle
+    style
+        include styles/normalize.css
+        include styles/slick.css
+        include scripts/fancybox/jquery.fancybox-1.3.4.css
+        include styles/style.css 
+  body
+      .wrapper
+        include modules/header
+        section._anim-items._anim-no-hide
+          .main
+            p.main__title CAR MUSC
+            .decore
+              span 
+              span 
+              span 
+              span 
+            p.main__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae orci urna amet penatibus.
+            button(onclick="document.location='/src/price.html'").button Наши услуги
+        section._anim-items._anim-no-hide
+          .contacts
+            ul.contacts__colum
+              li.contacts__item
+                p.contacts__subtitle.adress-contacts адрес:
+                p.contacts__text.text-contacts Lorem ipsum dolor sit amet, consectetur adipiscing elit 
+            ul.contacts__colum    
+              li.contacts__item
+                 p.contacts__subtitle.phone-contacts телефон:
+                 a.contacts__tel(href="tel:+88121234567")
+                  span.contacts__tel-num 8 (812) 123-45-67
+                 a.contacts__tel(href="tel:+89111234567")
+                  span.contacts__tel-num 8-911-123-45-67
+            ul.contacts__colum       
+              li.contacts__item
+                p.contacts__subtitle.mode-contacts Режим работы:  
+                p.contacts__text.mode-text пн-пт : 10:00 - 20:00
+                p.contacts__text сб-вск : 12:00 - 20:00
+      .wrapper__next
+        section._anim-items._anim-no-hide
+          .achievements
+            ._container.achievements__inner
+              .achievements__column
+                h1.achievements__title наши достижения от кубка россии до чемпионатов мира
+                .decore.decore__achievements
+                  span
+                  span
+                  span
+                  span   
+                p.achievements__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant tincidunt aliquam tincidunt pretium sodales. Tristique odio pellentesque et tincidunt posuere arcu purus lobortis risus. Urna, ut amet odio orci magnis praesent ultrices. Praesent malesuada lacus tellus tristique sit at. Sed viverra nulla nam arcu, non iaculis pretium, volutpat. 
+              .achievements__column
+                ul.achievements__grid
+                  li.achievements__items._block1
+                    img.achievements__img(src="/src/images/achievements/1.svg", alt="#1")
+                    p.achievements__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui 
+                  li.achievements__items._block2
+                    img.achievements__img(src="/src/images/achievements/6.svg", alt="#6")
+                    p.achievements__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+                  li.achievements__items._block3
+                    img.achievements__img(src="/src/images/achievements/2.svg", alt="#2")
+                    p.achievements__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+                  li.achievements__items._block4 
+                    img.achievements__img(src="/src/images/achievements/1.svg", alt="#1")
+                    p.achievements__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+                  li.achievements__items._block5
+                    img.achievements__img(src="/src/images/achievements/4.svg", alt="#4")
+                    p.achievements__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+                  li.achievements__items._block6
+                    img.achievements__img(src="/src/images/achievements/3.svg", alt="#3")
+                    p.achievements__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+                  li.achievements__items._block7
+                    img.achievements__img(src="/src/images/achievements/1.svg", alt="#1")
+                    p.achievements__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+                  li.achievements__items._block8
+                    img.achievements__img(src="/src/images/achievements/cup.svg", alt="cup")
+                    p.achievements__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui
+        section._anim-items._anim-no-hide
+          .slick
+            .slick__container
+              ul.slick__list
+                li.slick__items
+                  img.slick__img(src="/src/images/slick1/car-slick1.jpg", alt="car")
+                  p.slick__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante. 
+                li.slick__items
+                  img.slick__img(src="/src/images/slick1/car2-slick1.jpg", alt="car")
+                  p.slick__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+                li.slick__items
+                  img.slick__img(src="/src/images/slick1/car3-slick1.jpg", alt="car")
+                  p.slick__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.    
+                li.slick__items
+                  img.slick__img(src="/src/images/slick1/car-slick1.jpg", alt="car")
+                  p.slick__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+                li.slick__items
+                  img.slick__img(src="/src/images/slick1/car2-slick1.jpg", alt="car")
+                  p.slick__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+                li.slick__items
+                  img.slick__img(src="/src/images/slick1/car3-slick1.jpg", alt="car")
+                  p.slick__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit ante.
+        section._anim-items._anim-no-hide
+          .benefits
+            ._container
+              .benefits__inner
+                ul.benefits__column
+                  li.benefits__items
+                    img.benefits__img(src="/src/images/slick2/svg1-slick2.svg", alt="image")
+                    h2.benefits__title материалы от лучших компаний
+                  p.benefits__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie proin tristique duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium
+                  .decore
+                    span
+                    span
+                    span
+                    span  
+                  li.benefits__items
+                    img.benefits__img(src="/src/images/slick2/svg2-slick2.svg", alt="image")
+                    h2.benefits__title--center Опытные мастера
+                  p.benefits__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec elementum egestas vitae ullamcorper. Amet volutpat ornare pharetra amet adipiscing orci, lectus aenean ultricies. Erat viverra eget blandit ornare. Molestie ipsum commodo faucibus rhoncus
+                  .decore
+                    span
+                    span
+                    span
+                    span      
+                  li.benefits__items
+                    img.benefits__img(src="/src/images/slick2/svg3-slick2.svg", alt="image")
+                    h2.benefits__title Гарантия на все виды работы
+                  p.benefits__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat.
+                ul.benefits__slick
+                  li.benefits__item
+                    img.benefits__slick-img(src="/src/images/slick2/slick2-title1.jpg", alt="car") 
+                    p.benefits__slick-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus. 
+                  li.benefits__item
+                    img.benefits__slick-img(src="/src/images/slick2/slick2-title2.jpg", alt="car")
+                    p.benefits__slick-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.
+        section._anim-items._anim-no-hide(id="Оклейка автомобилей")
+          .service(id="Детейлинг автомобилей")
+            ._container
+              .service__decore
+                h1.service__title Наши услуги
+                .decore
+                  span
+                  span
+                  span
+                  span
+                .service__inner(id="main")
+                  .service__buttions
+                    button.service__btn(id="link1") Оклейка
+                    button.service__btn(id="link2") Детейлинг
+                  ul.service__column.tab(id="link1")
+                    li.service__items
+                      img.service__img(src="/src/images/service/service_svg1.svg", alt="svg")
+                      h3.service__subtitle Защитные пленки
+                      p.service__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                      button(href="#").button Подробнее
+                    li.service__items
+                      img.service__img(src="/src/images/service/service_svg2.svg", alt="svg")
+                      h3.service__subtitle Цветные пленки
+                      p.service__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                      button(href="#").button Подробнее
+                    li.service__items
+                      img.service__img(src="/src/images/service/service_svg3.svg", alt="svg")
+                      h3.service__subtitle Дизайн
+                      p.service__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                      button(href="#").button Подробнее
+                    li.service__items
+                      img.service__img(src="/src/images/service/service_svg4.svg", alt="svg")
+                      h3.service__subtitle Оклейка салона
+                      p.service__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                      button(href="#").button Подробнее
+                  ul.service__column.tab(id="link2")
+                    li.service__items
+                      img.service__img(src="/src/images/service/service_svg1.svg", alt="svg")
+                      h3.service__subtitle Защитные пленки
+                      p.service__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                      button(href="#").button Подробнее
+                    li.service__items
+                      img.service__img(src="/src/images/service/service_svg2.svg", alt="svg")
+                      h3.service__subtitle Цветные пленки
+                      p.service__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                      button(href="#").button Подробнее
+                    li.service__items
+                      img.service__img(src="/src/images/service/service_svg3.svg", alt="svg")
+                      h3.service__subtitle Дизайн
+                      p.service__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                      button(href="#").button Подробнее
+                    li.service__items
+                      img.service__img(src="/src/images/service/service_svg4.svg", alt="svg")
+                      h3.service__subtitle Оклейка салона
+                      p.service__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur ultrices pellentesque vulputate sit. Ut feugiat.
+                      button(href="#").button Подробнее                
+        section.replay._anim-items._anim-no-hide
+          .benefits
+            ._container
+              .benefits__inner
+                ul.benefits__slick
+                  li.benefits__item
+                    img.benefits__slick-img(src="/src/images/slick2/slick2-title1.jpg", alt="car") 
+                    p.benefits__slick-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus. 
+                  li.benefits__item
+                    img.benefits__slick-img(src="/src/images/slick2/slick2-title2.jpg", alt="car")
+                    p.benefits__slick-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus.     
+                ul.benefits__column
+                  li.benefits__items
+                    img.benefits__img(src="/src/images/service/service_svg1.svg", alt="image")
+                    h2.benefits__title--top 100% полироль axem
+                  p.benefits__text Pharetra in bibendum id id. Sit maecenas sollicitudin est, hendrerit in malesuada. Eu, et lacus nisi mus sagittis, rhoncus est dictum. Gravida lectus urna, arcu, sodales. Ac.
+                  .decore
+                    span
+                    span
+                    span
+                    span  
+                  li.benefits__items
+                    img.benefits__img(src="/src/images/service/service_svg2.svg", alt="image")
+                    h2.benefits__title--center выполняем работу четко по тз
+                  p.benefits__text Lorem nulla non nibh quis elit odio. Dui et ultricies duis mattis dictum et senectus nunc sodales. Tellus lorem risus etiam quam massa lobortis convallis laoreet. Nec.
+                  .decore
+                    span
+                    span
+                    span
+                    span      
+                  li.benefits__items
+                    img.benefits__img(src="/src/images/service/service_svg3.svg", alt="image")
+                    h2.benefits__title у нас лучшие мастера
+                  p.benefits__text Posuere nam sodales ullamcorper bibendum justo maecenas at. Ultricies bibendum morbi tempor vehicula. Ultrices erat maecenas in id maecenas sed ipsum scelerisque. 
+        section._anim-items._anim-no-hide(id="Галерея работ")
+          .works
+            h1.works__title Наши работы
+            .decore
+              span
+              span
+              span
+              span  
+            .works__gallery
+              a.works__link(rel="gallery" href="/src/images/gallery/car1.jpg") 
+                img.works__img(src="/src/images/gallery/car1.jpg", alt="1")
+              a.works__link(rel="gallery" href="/src/images/gallery/car2.jpg")  
+                img.works__img(src="/src/images/gallery/car2.jpg", alt="2")
+              a.works__link(rel="gallery" href="/src/images/gallery/car3.jpg")
+                img.works__img(src="/src/images/gallery/car3.jpg", alt="3")
+              a.works__link(rel="gallery" href="/src/images/gallery/car4.jpg")  
+                img.works__img(src="/src/images/gallery/car4.jpg", alt="4")
+              a.works__link(rel="gallery" href="/src/images/gallery/car5.jpg")  
+                img.works__img(src="/src/images/gallery/car5.jpg", alt="5")
+              a.works__link(rel="gallery" href="/src/images/gallery/car6.jpg")
+                img.works__img(src="/src/images/gallery/car6.jpg", alt="6")
+              a.works__link(rel="gallery" href="/src/images/gallery/car1.jpg") 
+                img.works__img(src="/src/images/gallery/car1.jpg", alt="1")
+              a.works__link(rel="gallery" href="/src/images/gallery/car2.jpg")  
+                img.works__img(src="/src/images/gallery/car2.jpg", alt="2")
+              a.works__link(rel="gallery" href="/src/images/gallery/car3.jpg")
+                img.works__img(src="/src/images/gallery/car3.jpg", alt="3")
+              a.works__link(rel="gallery" href="/src/images/gallery/car4.jpg")  
+                img.works__img(src="/src/images/gallery/car4.jpg", alt="4")
+              a.works__link(rel="gallery" href="/src/images/gallery/car5.jpg")  
+                img.works__img(src="/src/images/gallery/car5.jpg", alt="5")
+              a.works__link(rel="gallery" href="/src/images/gallery/car6.jpg")
+                img.works__img(src="/src/images/gallery/car6.jpg", alt="6")
+              a.works__link(rel="gallery" href="/src/images/gallery/car1.jpg") 
+                img.works__img(src="/src/images/gallery/car1.jpg", alt="1")
+              a.works__link(rel="gallery" href="/src/images/gallery/car2.jpg")  
+                img.works__img(src="/src/images/gallery/car2.jpg", alt="2")
+              a.works__link(rel="gallery" href="/src/images/gallery/car3.jpg")
+                img.works__img(src="/src/images/gallery/car3.jpg", alt="3")
+              a.works__link(rel="gallery" href="/src/images/gallery/car4.jpg")  
+                img.works__img(src="/src/images/gallery/car4.jpg", alt="4")
+              a.works__link(rel="gallery" href="/src/images/gallery/car5.jpg")  
+                img.works__img(src="/src/images/gallery/car5.jpg", alt="5")
+              a.works__link(rel="gallery" href="/src/images/gallery/car6.jpg")
+                img.works__img(src="/src/images/gallery/car6.jpg", alt="6")  
+      include modules/footer
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+      script(src="/src/js/slick.min.js")
+      script(src="/src/js/main.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js")
+      script(src="./scripts/jquery-1.4.3.min.js")
+      script(type="text/javascript" src="/src/scripts/fancybox/jquery.mousewheel-3.0.4.pack.js")
+      script(type="text/javascript" src="/src/scripts/fancybox/jquery.fancybox-1.3.4.pack.js")
